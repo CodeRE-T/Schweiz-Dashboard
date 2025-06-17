@@ -7,13 +7,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Lade Werte (z. B. Mietpreise)
 let gemeindeWerte = {};
 
-fetch("data/gemeinde_werte.json")
+fetch("data/gemeinde_werte_dummy.json")
   .then(res => res.json())
   .then(data => {
     gemeindeWerte = data;
 
     // Lade GeoJSON und zeichne Gemeinden
-    fetch("data/schweiz_gemeinden.geojson")
+    fetch("data/schweiz_gemeinden_dummy.geojson")
       .then(res => res.json())
       .then(geoData => {
         L.geoJSON(geoData, {
