@@ -3,7 +3,7 @@ var map = L.map('map').setView([46.948, 7.447], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // GeoJSON hinzufügen
-fetch('data/bern.geojson')
+fetch('data_bern.geojson')
   .then(res => res.json())
   .then(geoData => {
     L.geoJSON(geoData).addTo(map);
