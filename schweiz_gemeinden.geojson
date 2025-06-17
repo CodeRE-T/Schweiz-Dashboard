@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "BFS_NUMMER": "261", 
+        "GEMEINDENAME": "Zürich"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [ ... ]
+      }
+    },
+    ...
+  ]
+}
