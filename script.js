@@ -4,21 +4,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-// GeoJSON hinzufügen
-fetch('data/bern.geojson')
-  .then(res => res.json())
-  .then(geoData => {
-    L.geoJSON(geoData).addTo(map);
-
-// Lade Werte (z. B. Mietpreise)
-let gemeindeWerte = {};
-
-fetch("data/gemeinde_werte_dummy.json")
-  .then(res => res.json())
-  .then(data => {
-    gemeindeWerte = data;
-
-    // Lade GeoJSON und zeichne Gemeinden
+// Lade GeoJSON und zeichne Gemeinden
     fetch("data/schweiz_gemeinden_dummy.geojson")
       .then(res => res.json())
       .then(geoData => {
