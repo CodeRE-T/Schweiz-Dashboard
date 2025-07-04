@@ -3,332 +3,82 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Z\u00fcrich"
-      },
+      "properties": { "GEMEINDENAME": "Zürich" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              8.5,
-              47.0
-            ],
-            [
-              8.6,
-              47.0
-            ],
-            [
-              8.6,
-              47.1
-            ],
-            [
-              8.5,
-              47.1
-            ],
-            [
-              8.5,
-              47.0
-            ]
-          ]
-        ]
+        "coordinates": [[[8.525,47.365],[8.575,47.365],[8.575,47.415],[8.525,47.415],[8.525,47.365]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Bern"
-      },
+      "properties": { "GEMEINDENAME": "Bern" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              8.6,
-              47.05
-            ],
-            [
-              8.7,
-              47.05
-            ],
-            [
-              8.7,
-              47.15
-            ],
-            [
-              8.6,
-              47.15
-            ],
-            [
-              8.6,
-              47.05
-            ]
-          ]
-        ]
+        "coordinates": [[[7.425,46.935],[7.475,46.935],[7.475,46.985],[7.425,46.985],[7.425,46.935]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Luzern"
-      },
+      "properties": { "GEMEINDENAME": "Luzern" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              8.7,
-              47.1
-            ],
-            [
-              8.799999999999999,
-              47.1
-            ],
-            [
-              8.799999999999999,
-              47.2
-            ],
-            [
-              8.7,
-              47.2
-            ],
-            [
-              8.7,
-              47.1
-            ]
-          ]
-        ]
+        "coordinates": [[[8.275,47.035],[8.325,47.035],[8.325,47.085],[8.275,47.085],[8.275,47.035]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Basel"
-      },
+      "properties": { "GEMEINDENAME": "Basel" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              8.8,
-              47.15
-            ],
-            [
-              8.9,
-              47.15
-            ],
-            [
-              8.9,
-              47.25
-            ],
-            [
-              8.8,
-              47.25
-            ],
-            [
-              8.8,
-              47.15
-            ]
-          ]
-        ]
+        "coordinates": [[[7.565,47.545],[7.615,47.545],[7.615,47.595],[7.565,47.595],[7.565,47.545]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Genf"
-      },
+      "properties": { "GEMEINDENAME": "Genf" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              8.9,
-              47.2
-            ],
-            [
-              9.0,
-              47.2
-            ],
-            [
-              9.0,
-              47.300000000000004
-            ],
-            [
-              8.9,
-              47.300000000000004
-            ],
-            [
-              8.9,
-              47.2
-            ]
-          ]
-        ]
+        "coordinates": [[[6.125,46.185],[6.175,46.185],[6.175,46.235],[6.125,46.235],[6.125,46.185]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Winterthur"
-      },
+      "properties": { "GEMEINDENAME": "Winterthur" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              9.0,
-              47.25
-            ],
-            [
-              9.1,
-              47.25
-            ],
-            [
-              9.1,
-              47.35
-            ],
-            [
-              9.0,
-              47.35
-            ],
-            [
-              9.0,
-              47.25
-            ]
-          ]
-        ]
+        "coordinates": [[[8.675,47.475],[8.725,47.475],[8.725,47.525],[8.675,47.525],[8.675,47.475]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Lausanne"
-      },
+      "properties": { "GEMEINDENAME": "Lausanne" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              9.1,
-              47.3
-            ],
-            [
-              9.2,
-              47.3
-            ],
-            [
-              9.2,
-              47.4
-            ],
-            [
-              9.1,
-              47.4
-            ],
-            [
-              9.1,
-              47.3
-            ]
-          ]
-        ]
+        "coordinates": [[[6.605,46.505],[6.655,46.505],[6.655,46.555],[6.605,46.555],[6.605,46.505]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "St. Gallen"
-      },
+      "properties": { "GEMEINDENAME": "St. Gallen" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              9.2,
-              47.35
-            ],
-            [
-              9.299999999999999,
-              47.35
-            ],
-            [
-              9.299999999999999,
-              47.45
-            ],
-            [
-              9.2,
-              47.45
-            ],
-            [
-              9.2,
-              47.35
-            ]
-          ]
-        ]
+        "coordinates": [[[9.345,47.405],[9.395,47.405],[9.395,47.455],[9.345,47.455],[9.345,47.405]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Chur"
-      },
+      "properties": { "GEMEINDENAME": "Chur" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              9.3,
-              47.4
-            ],
-            [
-              9.4,
-              47.4
-            ],
-            [
-              9.4,
-              47.5
-            ],
-            [
-              9.3,
-              47.5
-            ],
-            [
-              9.3,
-              47.4
-            ]
-          ]
-        ]
+        "coordinates": [[[9.505,46.835],[9.555,46.835],[9.555,46.885],[9.505,46.885],[9.505,46.835]]]
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "GEMEINDENAME": "Biel"
-      },
+      "properties": { "GEMEINDENAME": "Biel" },
       "geometry": {
         "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              9.4,
-              47.45
-            ],
-            [
-              9.5,
-              47.45
-            ],
-            [
-              9.5,
-              47.550000000000004
-            ],
-            [
-              9.4,
-              47.550000000000004
-            ],
-            [
-              9.4,
-              47.45
-            ]
-          ]
-        ]
+        "coordinates": [[[7.215,47.125],[7.265,47.125],[7.265,47.175],[7.215,47.175],[7.215,47.125]]]
       }
     }
   ]
