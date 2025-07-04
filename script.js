@@ -6,6 +6,20 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 let gemeindeWerte = {};
 
+// Dummy-Daten für Immobilienpreise (CHF/m²) pro Stadt
+const realEstateData = {
+  "Zürich": 12000,
+  "Genf": 10500,
+  "Bern": 9000,
+  "Basel": 9500,
+  "Lausanne": 9800,
+  "Luzern": 8500,
+  "Winterthur": 8000,
+  "St. Gallen": 7800,
+  "Chur": 7600,
+  "Biel": 7400
+};
+
 fetch("gemeinde_werte_dummy.json")
   .then(res => res.json())
   .then(data => {
@@ -30,6 +44,11 @@ fetch("gemeinde_werte_dummy.json")
             const name = feature.properties.GEMEINDENAME;
             const value = gemeindeWerte[name] || "Keine Daten";
             layer.bindPopup(`<b>${name}</b><br>Wert: ${value}`);
+
+            // Highlight im Plotly-Chart beim Klick auf die Region
+            layer.on('click', function() {
+              highlightBar(name);
+            });
           }
         }).addTo(map);
       });
@@ -44,12 +63,18 @@ function getColor(value) {
   if (value > 16) return '#FEB24C';
   return '#FFEDA0';
 }
-// Example: Swiss Real Estate Bar Chart (dummy data)
+
+// Plotly-Balkendiagramm mit passenden Städtenamen
+const barCities = [
+  "Zürich", "Genf", "Bern", "Basel", "Lausanne", "Luzern", "Winterthur", "St. Gallen", "Chur", "Biel"
+];
+const barValues = barCities.map(city => realEstateData[city] || 0);
+
 var trace = {
-  x: ['Zurich', 'Geneva', 'Bern', 'Basel', 'Lausanne'],
-  y: [12000, 10500, 9000, 9500, 9800], // Example prices per m²
+  x: barCities,
+  y: barValues,
   type: 'bar',
-  marker: { color: '#FC4E2A' }
+  marker: { color: barCities.map(() => '#FC4E2A') }
 };
 
 var layout = {
@@ -59,3 +84,11 @@ var layout = {
 };
 
 Plotly.newPlot('real-estate-visualization', [trace], layout);
+
+// Funktion zum Hervorheben eines Balkens im Plotly-Chart
+function highlightBar(cityName) {
+  const colors = barCities.map(city =>
+    city === cityName ? '#800026' : '#FC4E2A'
+  );
+  Plotly.restyle('real-estate-visualization', { 'marker.color': [colors] });
+}
