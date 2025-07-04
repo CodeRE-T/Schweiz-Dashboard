@@ -45,19 +45,17 @@ function getColor(value) {
   return '#FFEDA0';
 }
 // Example: Swiss Real Estate Bar Chart (dummy data)
-document.addEventListener('DOMContentLoaded', function () {
-  var trace = {
-    x: ['Zurich', 'Geneva', 'Bern', 'Basel', 'Lausanne'],
-    y: [12000, 10500, 9000, 9500, 9800], // Example prices per m²
-    type: 'bar',
-    marker: { color: '#FC4E2A' }
-  };
+var trace = {
+  x: ['Zurich', 'Geneva', 'Bern', 'Basel', 'Lausanne'],
+  y: [12000, 10500, 9000, 9500, 9800], // Example prices per m²
+  type: 'bar',
+  marker: { color: '#FC4E2A' }
+};
 
-  var layout = {
-    title: 'Durchschnittliche Immobilienpreise (CHF/m²)',
-    xaxis: { title: 'Stadt' },
-    yaxis: { title: 'Preis (CHF/m²)' }
-  };
+var layout = {
+  title: 'Durchschnittliche Immobilienpreise (CHF/m²)',
+  xaxis: { title: 'Stadt' },
+  yaxis: { title: 'Preis (CHF/m²)' }
+};
 
-  Plotly.newPlot('real-estate-visualization', [trace], layout);
-});
+Plotly.newPlot('real-estate-visualization', [trace], layout);
